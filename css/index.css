@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    "header-cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell";
+}
+main,
+header,
+footer {
+  border: 1px solid #ccc7c8;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+header {
+  size: 50px;
+  height: 80px;
+  background-color: beige;
+}
+header img {
+  font-size: 10px;
+}
+
+main > h1 {
+  font: optional;
+  margin: 12px 0 16px;
+  font-size: 28px;
+  line-height: 34px;
+  color: crimson;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main > h1:after {
+  height: auto;
+  position: relative;
+  left: 50%;
+  display: block;
+  content: " ";
+  width: 200px;
+  height: 3px;
+  transform: skewX(-12deg) translateX(-50%);
+  background: radial-gradient(#cddc39, #fff);
+}
+footer {
+  font-size: 20px;
+}
+footer > h2 {
+  font-size: 20px;
+}
+footer > div > ul > section {
+  font-size: 16px;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu > li {
+  position: relative;
+  float: left;
+}
+
+.menu > li > a {
+  font-size: 20px;
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(38, 162, 181);
+  margin: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.menu > li > a:hover {
+  background-color: #555;
+  color: red;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #444;
+}
+
+.submenu li a {
+  font-size: 17px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+.submenu li a:hover {
+  background-color: rgb(38, 162, 181);
+}
+
+.menu > li:hover > .submenu {
+  display: block;
+}
+
+.search-box {
+  margin: 0;
+  width: unset;
+  padding-top: 3px;
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.search-box input[type="search"] {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+}
+
+.search-icon,
+.shopping-cart-icon {
+  padding: 2px 4px;
+  min-width: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: red;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.shopping-cart-icon {
+  color: #ed4190;
+}
+footer > div > ul > li {
+  font-size: 15px;
+  list-style: none;
+}
+.a {
+  text-decoration: none;
+  color: #555;
+}
+div > h2 {
+  color: red;
+  text-align: left;
+}
+h2 {
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.img {
+  height: 40px;
+  width: auto;
+}
+
+#carouselExample img {
+  max-width: 300px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+.dieuhuong {
+  font-size: 15px;
+  text-align: left;
+  color: #cccccc;
+}
+.dieuhuong > a {
+  color: #cccccc;
+}
+.left-align {
+  text-align: left;
+}
+table {
+  border-radius: 10px;
+}
+.product-info {
+  border: #ed4190;
+}
+#tuongtu > h2 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.noibat {
+  text-align: left;
+}
+.noibat > a > button {
+  color: #ed4190;
+  background-color: #cccccc;
+  border: 1px;
+  border-radius: 5px;
+}
+
+/* Liên Hệ */
+.contai {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ccc7c8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea {
+  height: 150px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 24px;
+  color: #ffd700;
+  cursor: pointer;
+}
+.rating input:checked ~ label {
+  color: #ffd700;
+}
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #218838;
+}

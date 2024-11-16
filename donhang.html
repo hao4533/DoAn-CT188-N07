@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi-vn">
+  <head>
+    <title>Đơn hàng</title>
+    <meta charset="UTF-8" />
+    <link
+      href="images/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  
+    <!-- <link rel="stylesheet" href="css/slide.css" /> -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script>
+      window.onload = function () {
+        showCart();
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="">Giới thiệu</a></li>
+          <li>
+            <a href="index.html">Danh Mục</a>
+            <ul class="submenu">
+              <li><a href="SamSung.html">SamSung</a></li>
+              <li><a href="realme.html">Realme</a></li>
+              <li>
+                <a href="IPhone.html">IPhone</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
+        <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+        &nbsp;
+        <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
+      </form>
+    </div>
+  </header>
+
+    <main>
+      <h1>Giỏ hàng của bạn</h1>
+      <table border id="cartDetail" style="width: 100%;">
+        <thead>
+          <tr>
+            <th>Hình SP</th>
+            <th>Tên SP</th>
+            <th>Số lượng</th>
+            <th>Giá</th>
+            <th>Thành tiền</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6" align="right">
+              Tổng thành tiền (A) = <span id="bill_totalpretax"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" align="right">
+              Chiết Khấu (B) = <span id="bill_discount"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" align="right">
+              Thuế (C) = 10% x (A - B) = <span id="bill_tax"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" align="right">
+              Tổng đơn hàng = A - B + C = <span id="bill_total"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6" align="center">
+              <button type="submit">Xác Nhận Đơn Hàng</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <footer>
+      
+      <div class="grid-container">
+        <ul>
+          <h2>Tổng đài hỗ trợ miễn phí</h2>
+          <li>Gọi mua hàng ###.####</li>
+
+          <h2>Phương thức thanh toán</h2>
+          <img src="img/momo.jfif" alt="" class="img" />
+          <img src="img/zaLopay.png" alt="" class="img" />
+          <img src="img/vnpay.png" alt="" class="img" />
+        </ul>
+        <ul>
+          <h2>Thông tin và chính sách</h2>
+          <li>Mua hàng và thanh toán Online</li>
+          <li>Mua hàng trả góp Online</li>
+        </ul>
+        <ul>
+          <h2>Website thành viên</h2>
+            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a ><br />
+            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br />
+            <a class="a" href="https://web.facebook.com/hieunhan.huynh.984">Huỳnh Hiếu Nhân</a>
+          </section>
+        </ul>
+      </div>
+      <p>Bản quyền thuộc về THN-Phone</p>
+    </footer>
+  </body>
+</html>
