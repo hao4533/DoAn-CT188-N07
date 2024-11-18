@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/timkiem.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   </head>
   <body>
 
     <header>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="dangnhap.html">Đăng Nhập</a></li>
-            <li>
-              <a href="index.html">Danh Mục</a>
-              <ul class="submenu">
-                <li><a href="SamSung.html">SamSung</a></li>
-                <li><a href="realme.html">Realme</a></li>
-                <li>
-                  <a href="IPhone.html">IPhone</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="lienhe.html">Liên hệ</a></li>
-          </ul>
-        </nav>
-        <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
-          <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
-          <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
-          &nbsp;
-          <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
-        </form>
-      </div>
-    </header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="lienhe.html">Liên Hệ</a></li>
+          <li>
+            <a href="index.html">Danh Mục</a>
+            <ul class="submenu">
+              <li><a href="SamSung.html">SamSung</a></li>
+              <li><a href="realme.html">Realme</a></li>
+              <li><a href="IPhone.html">IPhone</a></li>
+            </ul>
+          </li>
+          <li><a href="dangnhap.html">Đăng Nhập</a></li>
+        </ul>
+      </nav>
+      <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
+        <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+        &nbsp;
+        <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
+      </form>
+    </div>
+  </header>
 
     <main>
       <div class="grid-container">
@@ -48,7 +47,7 @@
           <a href="Realme11pro.html">
             <h3 class="product-title">Realme 11 Pro</h3></a>
           <p class="product-description">
-            12GB/512GB <br />CPU: MediaTek Dimensity 7050 5G 8 nhân
+            12GB/512GB <br/>CPU: MediaTek Dimensity 7050 5G 8 nhân
           </p>
           <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
           <span>

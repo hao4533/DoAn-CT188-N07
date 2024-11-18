@@ -194,20 +194,6 @@ table {
 .product-info {
   border: #ed4190;
 }
-#tuongtu > h2 {
-  font-size: 25px;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-.noibat {
-  text-align: left;
-}
-.noibat > a > button {
-  color: #ed4190;
-  background-color: #cccccc;
-  border: 1px;
-  border-radius: 5px;
-}
 
 /* Liên Hệ */
 .contai {
