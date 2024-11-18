@@ -44,18 +44,24 @@
     </footer>
 
     <script>
+      // Lấy form và các trường input
       const form = document.getElementById("register-form");
       const passwordInput = document.getElementById("password");
       const confirmPasswordInput = document.getElementById("confirm_password");
 
       form.addEventListener("submit", function (event) {
+        // Lấy giá trị của hai trường mật khẩu
         const password = passwordInput.value;
         const confirmPassword = confirmPasswordInput.value;
+
+        // Kiểm tra mật khẩu và xác nhận mật khẩu
         if (password !== confirmPassword) {
-          event.preventDefault();
+          event.preventDefault(); // Ngăn không cho form gửi đi
           alert("Mật khẩu và xác nhận mật khẩu không khớp!");
           return;
         }
+
+        // Nếu mật khẩu khớp, cho phép gửi form
         alert("Đăng ký thành công!");
       });
     </script>
