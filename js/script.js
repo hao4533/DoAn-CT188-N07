@@ -5,9 +5,9 @@ var itemList = {
     photo: "img/realme/11 Pro Plus.jfif",
   },
   sp02: {
-    name: "Realme C65s",
+    name: "Realme c61",
     price: 5190000,
-    photo: "img/realme/C65s.jfif",
+    photo: "img/realme/c61.jfif",
   },
   sp03: {},
 

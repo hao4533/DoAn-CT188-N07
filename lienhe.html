@@ -17,25 +17,17 @@
         <ul class="menu">
           <li><a href="index.html">Trang chủ</a></li>
           <li><a href="lienhe.html">Liên Hệ</a></li>
-          <li>
-            <a href="index.html">Danh Mục</a>
-            <ul class="submenu">
-              <li><a href="SamSung.html">SamSung</a></li>
-              <li><a href="realme.html">Realme</a></li>
-              <li><a href="IPhone.html">IPhone</a></li>
-            </ul>
-          </li>
           <li><a href="dangnhap.html">Đăng Nhập</a></li>
         </ul>
       </nav>
-        <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
-          <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
-          <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
-          &nbsp;
-          <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
-        </form>
-      </div>
-    </header>
+      <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
+        <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
+        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+        &nbsp;
+        <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
+      </form>
+    </div>
+  </header>
     <main>
         <h1 style="text-align: center">Liên Hệ</h1>
         <center>
@@ -51,7 +43,7 @@
               <input type="email"  id="email" name="email" required  placeholder="Nhập email của bạn"/>
     
               <label for="feedback">Góp ý của bạn:</label>
-              <textarea id="feedback" name="feedback" required placeholder="Nhập góp ý của bạn"></textarea>
+              <textarea id="feedback" name="feedback" required placeholder="Nhập góp ý của bạn"></textarea><br>
               <button type="submit" onclick="show">Gửi Góp Ý</button>
             </form>
           </div>

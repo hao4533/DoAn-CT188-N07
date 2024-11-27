@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realme C65s</title>
+    <title>Realme</title>
     <link rel="stylesheet" href="css/slide.css" />
     <link rel="stylesheet" href="css/index.css">
     <script src="js/script.js"></script>
@@ -36,66 +36,56 @@
         </form>
       </div>
     </header>
-
     <main>
-      <h1 class="dieuhuong"><a href="index.html">Trang chủ</a> > <a href="realme.html">Realme</a></h1>
-      <h1>Realme C65s</h1>
-      <div class="container">
-        <div class="slider">
-          <div class="slide active">
-            <img src="img/realme/c65s-3.jfif" alt="Slide 1" />
+      <h1>REALME</h1>
+      <div class="grid-container">
+        <div class="product-card">
+            <a href="Realme11pro.html">
+              <img src="img/realme/11 Pro Plus.jfif" alt="Sản phẩm 1" class="product-image"/></a>
+            <a href="Realme11pro.html">
+              <h3 class="product-title">Realme 11 Pro</h3></a>
+            <p class="product-description">
+              12GB/512GB <br />CPU: MediaTek Dimensity 7050 5G 8 nhân
+            </p>
+            <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
+            <span>
+              <input type="number" id="sp01" min="0" max="100" size="3" value="0" onkeydown="return false">
+              <button  onclick="addCart('sp01')">Thêm vào giỏ hàng</button>
+            </span>
           </div>
-          <div class="slide active">
-            <img src="img/realme/c65s-2.jfif" alt="Slide 1" />
-          </div>
-          <div class="slide">
-            <img src="img/realme/c65s-1.png" alt="Slide 2" />
-          </div>
-          
-          <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
-          <div class="next" onclick="changeSlide(1)">&#10095;</div>
-        </div>
 
-        <div class="product-info">
-        <table border="1">
-          <tr class="left-align">Thông số kỹ thuật</tr>
-          <tr class="left-align">
-            <td>
-              Kích thước màng hình
-            </td>
-            <td>6.745 inches</td>
-          </tr>
-          <tr class="left-align">
-            <td>Công nghệ màn hình</td>
-            <td>IPS LCD</td>
-          </tr>
-          <tr class="left-align">
-            <td>Camera sau</td>
-            <td>Chính 50 MP</td>
-          </tr>
-          <tr class="left-align">
-            <td>Camera trước</td>
-            <td>8 MP</td>
-          </tr>
-          <tr class="left-align">
-            <td>Chipset</td>
-            <td>Unisoc Tiger T612</td>
-          </tr>
-          <tr class="left-align">
-            <td>Pin</td>
-            <td>5000 mAh</td>
-          </tr>
-        </table>
-        <br>
-        <input type="number" id="sp02" min="0" max="100" size="3" value="0" onkeydown="return false">
-        <button  onclick="addCart('sp02')">Thêm vào giỏ hàng</button>
+          <div class="product-card">
+            <a href="Realmec61.html">
+              <img src="img/realme/c61.jfif" alt="Sản phẩm 2" class="product-image" />
+              <h3 class="product-title">Realme c61</h3>
+            </a>
+            <p class="product-description">
+              6GB/128GB <br />CPU: Unisoc Tiger T612
+            </p>
+            <p class="product-price">5.190.000đ</p>
+            <span>
+              <input type="number" id="sp02" min="0" max="100" size="3" value="0" onkeydown="return false">
+              <button  onclick="addCart('sp02')">Thêm vào giỏ hàng</button>
+            </span>
+          </div>
+  
+          <div class="product-card">
+            <a href="Realme8.html">
+              <img src="img/realme/8.jfif" alt="Sản phẩm 3" class="product-image" />
+              <h3 class="product-title">Realme 8</h3>
+            </a>
+            <p class="product-description">
+              8GB/128GB <br/>CPU: MediaTek Helio G95
+            </p>
+            <p class="product-price">Ngừng kinh doanh</p>
+            <!-- <span>
+              <input type="number" id="sp03" min="0" max="100" size="3" value="0" onkeydown="return false">
+              <button  onclick="addCart('sp03')">Thêm vào giỏ hàng</button>
+            </span> -->
+          </div>
         </div>
       </div>
-
-      
-  
     </main>
-
     <footer>
       
       <div class="grid-container">

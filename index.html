@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
-    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/timkiem.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   </head>
   <body>
 
@@ -18,14 +14,6 @@
         <ul class="menu">
           <li><a href="index.html">Trang chủ</a></li>
           <li><a href="lienhe.html">Liên Hệ</a></li>
-          <li>
-            <a href="index.html">Danh Mục</a>
-            <ul class="submenu">
-              <li><a href="SamSung.html">SamSung</a></li>
-              <li><a href="realme.html">Realme</a></li>
-              <li><a href="IPhone.html">IPhone</a></li>
-            </ul>
-          </li>
           <li><a href="dangnhap.html">Đăng Nhập</a></li>
         </ul>
       </nav>
@@ -39,131 +27,138 @@
   </header>
 
     <main>
-      <div class="grid-container">
 
-        <div class="product-card">
-          <a href="Realme11pro.html">
-            <img src="img/realme/11 Pro Plus.jfif" alt="Sản phẩm 1" class="product-image"/></a>
-          <a href="Realme11pro.html">
-            <h3 class="product-title">Realme 11 Pro</h3></a>
-          <p class="product-description">
-            12GB/512GB <br/>CPU: MediaTek Dimensity 7050 5G 8 nhân
-          </p>
-          <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
-          <span>
-            <input type="number" id="sp01" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp01')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-          <a href="RealmeC65s.html">
-            <img src="img/realme/C65s.jfif" alt="Sản phẩm 2" class="product-image" />
-            <h3 class="product-title">Realme C65s</h3>
-          </a>
-          <p class="product-description">
-            6GB/128GB <br />CPU: Unisoc Tiger T612
-          </p>
-          <p class="product-price">5.190.000đ</p>
-          <span>
-            <input type="number" id="sp02" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp02')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-          <a href="Realme8.html">
-            <img src="img/realme/8.jfif" alt="Sản phẩm 3" class="product-image" />
-            <h3 class="product-title">Realme 8</h3>
-          </a>
-          <p class="product-description">
-            8GB/128GB <br/>CPU: MediaTek Helio G95
-          </p>
-          <p class="product-price">Ngừng kinh doanh</p>
-          <!-- <span>
-            <input type="number" id="sp03" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp03')">Thêm vào giỏ hàng</button>
-          </span> -->
-        </div>
-
-        <div class="product-card">
-          <a href="iphone16.html">
-            <img src="img/IPhone/iphone16.jfif" alt="Sản phẩm 4" class="product-image" />
-            <h3 class="product-title">IPhone 16</h3>
-          </a>
-          <p class="product-description">256GB <br> CPU: Apple A18</p>
-          <p class="product-price">25.290.000đ</p>
-          <span>
-            <input type="number" id="sp04" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp04')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-         <a href="iphone16pro.html">
-            <img src="img/IPhone/iphone16pro.png" alt="Sản phẩm 5" class="product-image" />
-            <h3 class="product-title">IPhone 16 Pro</h3>
-         </a>
-          <p class="product-description">256GB <br> CPU: Apple A18 Pro.</p>
-          <p class="product-price">31.990.000đ</p>
-          <span>
-            <input type="number" id="sp05" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp05')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-         <a href="Iphone15.html">
-            <img src="img/IPhone/iphone15.webp" alt="Sản phẩm 6" class="product-image" />
-            <h3 class="product-title">IPhone 15</h3>
-         </a>
-          <p class="product-description">256GB <br> CPU: Apple A16 Bionic 6 nhân.</p>
-          <p class="product-price">22.890.000đ</p>
-          <span>
-            <input type="number" id="sp06" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp06')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-          <a href="samsungm55.html">
-            <img src="img/SamSung/m55.webp" alt="Sản phẩm 7" class="product-image" />
-            <h3 class="product-title">SamSung Galaxy M55 5G</h3>
-          </a>
-          <p class="product-description">12GB/256GB <br>CPU: Qualcomm Snapdragon 7 Gen 1.</p>
-          <p class="product-price">9.990.000đ</p>
-          <span>
-            <input type="number" id="sp07" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp07')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-          <a href="samsungs24.html">
-            <img src="img/SamSung/s24.webp" alt="Sản phẩm 8" class="product-image" />
-            <h3 class="product-title">Samsung Galaxy S24</h3>
-          </a>
-          <p class="product-description">8GB/256GB <br> CPU: Exynos 2400</p>
-          <p class="product-price">17.990.000đ</p>
-          <span>
-            <input type="number" id="sp08" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp08')">Thêm vào giỏ hàng</button>
-          </span>
-        </div>
-
-        <div class="product-card">
-         <a href="samsungzfold6.html">
-            <img src="img/SamSung/fold6.jpg" alt="Sản phẩm 3" class="product-image" />
-            <h3 class="product-title">Samsung Galaxy Z Fold6 5G</h3>
-         </a>
-          <p class="product-description">12GB/256GB <br>Snapdragon 8 Gen 3 for Galaxy.</p>
-          <p class="product-price">46.715.000đ</p>
-          <span>
-            <input type="number" id="sp09" min="0" max="100" size="3" value="0" onkeydown="return false">
-            <button  onclick="addCart('sp09')">Thêm vào giỏ hàng</button>
-          </span>
+      <div class="row">
+        <div class="col"></div>
+      <div class="col">
+        <div class="card" style="width: 14rem;">
+         <a href="Realme11pro.html"> <img src="img/realme/11 Pro Plus.jfif" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+           <a href="Realme11pro.html"><h5 class="card-title">Realme 11Pro</h5></a>
+            <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
+            <span>
+              <input type="number" id="sp01" min="0" max="100" size="3" value="0" onkeydown="return false">
+              <button  onclick="addCart('sp01')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </span>
+          </div>
         </div>
       </div>
+      <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="Realmec61.html"><img src="img/realme/c61.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+             <a href="Realmec61.html"> <h5 class="card-title">Realme c61</h5></a>
+              <p class="product-price">5.190.000đ</p>
+              <span>
+                <input type="number" id="sp02" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp02')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="Realme8.html"><img src="img/realme/8.jfif" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="Realme8.html"><h5 class="card-title">Realme 8</h5></a>
+              <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="iphone16.html"><img src="img/IPhone/iphone16.jfif" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="iphone16.html"><h5 class="card-title">Iphone 16</h5></a>
+              <p class="product-price">25.290.000đ</p>
+              <span>
+                <input type="number" id="sp04" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp04')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="iphone16pro.html"><img src="img/IPhone/iphone16pro.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="iphone16pro.html"><h5 class="card-title">Iphone 16Pro</h5></a>
+              <p class="product-price">31.990.000đ</p>
+              <span>
+                <input type="number" id="sp05" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp05')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="Iphone15.html"><img src="img/IPhone/iphone15.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+             <a href="Iphone15.html"> <h5 class="card-title">Iphone 15</h5></a>
+              <a href="Iphone15.html"><p class="product-price">22.890.000đ</p></a>
+              <span>
+                <input type="number" id="sp06" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp06')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="samsungm55.html"><img src="img/SamSung/m55.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="samsungm55.html"><h5 class="card-title">SamSung M55</h5></a>
+              <p class="product-price">9.990.000đ</p>
+              <span>
+                <input type="number" id="sp07" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp07')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+              <a href="samsungs24.html"><img src="img/SamSung/s24.webp" class="card-img-top" alt="..."></a>            
+              <div class="card-body">
+              <a href="samsungs24.html"><h5 class="card-title">SamSung S24</h5></a>
+              <p class="product-price">17.990.000đ</p>
+              <span>
+                <input type="number" id="sp08" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp08')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>            
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="samsungzfold6.html"><img src="img/SamSung/fold6.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+             <a href="samsungzfold6.html"> <h5 class="card-title">SamSung Z Flod 6</h5></a>
+              <p class="product-price">46.715.000đ</p>              
+              <span>
+                <input type="number" id="sp09" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp09')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>            
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
     </main>
     <footer>
       
@@ -184,15 +179,13 @@
         </ul>
         <ul>
           <h2>Website thành viên</h2>
-            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a ><br />
-            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br />
+            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a><br/>
+            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br/>
             <a class="a" href="https://web.facebook.com/hieunhan.huynh.984">Huỳnh Hiếu Nhân</a>
           </section>
         </ul>
       </div>
       <p>Bản quyền thuộc về THN-Phone</p>
     </footer>
-
-    <script src="slide.js"></script>
-  </body>
+    </body>
 </html>

@@ -1,55 +1,3 @@
- /* Sides */
-.container {
-  width: 1200px;
-  height: 300px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.slider,
-.product-info {
-  position: relative;
-  overflow: hidden;
-  width: 50%;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-}
-
-.slide.active {
-  display: block;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
 /* Card */
 .grid-container {
   display: grid;
@@ -103,8 +51,7 @@
   margin: 8px 0;
 }
 
-.add-to-cart-btn,
-.buy {
+.add-to-cart-btn {
   background-color: #3498db;
   color: white;
   padding: 10px 20px;
