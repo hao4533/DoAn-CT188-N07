@@ -219,6 +219,10 @@ table {
 .product-info {
   border: #ed4190;
 }
+.carousel-item img {
+  width: 678px;
+  height: 358px;
+}
 
 /* Liên Hệ */
 .contai {

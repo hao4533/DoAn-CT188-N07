@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SamSung Z Fold 6</title>
-    <link rel="stylesheet" href="css/slide.css" />
+    <title>SamSung ZFold 6</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+
+
   </head>
   <body>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
 
     <header>
       <nav>
@@ -30,98 +33,64 @@
   </header>
 
     <main>
-      <h1 class="dieuhuong"><a href="index.html">Trang chủ</a> > <a href="samsung.html">Samsung</a> > <a href="samsungzfold6.html">Samsung Z Fold6</a></h1>
-      <h1>Samsung Z Fold6</h1>
+      <h1 class="dieuhuong"><a href="index.html">Trang chủ</a> > <a href="realme.html">Realme</a></h1>
+      <h1>SamSung ZFold 6</h1>
       <div class="container">
-        <div class="slider">
-          <div class="slide active">
-            <img src="img/samsung/zfold6.webp" alt="Slide 1" />
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/SamSung/zfold6.webp"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/SamSung/zfold6_2.webp"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/SamSung/zfold6_3.webp"  alt="...">
+            </div>
           </div>
-          <div class="slide active">
-            <img src="img/samsung/zfold6_2.webp" alt="Slide 2" />
-          </div>
-          <div class="slide">
-            <img src="img/samsung/zfold6_3.webp" alt="Slide 3" />
-          </div>
-          
-          <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
-          <div class="next" onclick="changeSlide(1)">&#10095;</div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
         <div class="product-info">
-        <table border="1">
-          <tr class="left-align">Thông số kỹ thuật</tr>
-          <tr class="left-align">
-            <td>
-              Kích thước màng hình
-            </td>
-            <td>7.6 inches</td>
-          </tr>
-          <tr class="left-align">
-            <td>Công nghệ màn hình</td>
-            <td>
-                Dynamic AMOLED 2X</td>
-          </tr>
-          <tr class="left-align">
-            <td>Camera sau</td>
-            <td>Camera góc rộng: 50.0 MP, f/1.8, Thu phóng quang học 2x
-                Camera chụp góc siêu rộng: 12.0 MP, f/2.2
-          </td>
-          </tr>
-          <tr class="left-align">
-            <td>Camera trước</td>
-            <td>Camera bên ngoài:10 MP, f/2.2
-                Camera bên trong: 4 MP, F1.8</td>
-          </tr>
-          <tr class="left-align">
-            <td>Chipset</td>
-            <td>Snapdragon 8 Gen 3 for Galaxy Tăng lên 42% AI</td>
-          </tr>
-          <tr class="left-align">
-            <td>Pin</td>
-            <td>4400 mAh</td>
-          </tr>
-        </table>
-        <br>
-        <input type="number" id="sp09" min="0" max="100" size="3" value="0" onkeydown="return false">
-        <button  onclick="addCart('sp09')">Thêm vào giỏ hàng</button>
+          <table class="table table-striped" style="text-align: left;">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2">Thông số kỹ thuật</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kích thước màn hình</td>
+                <td>7.6 inches
+                </td>
+              </tr>
+              <tr>
+                <td>Công nghệ màn hình</td>
+                <td>Dynamic AMOLED 2X</td>
+              </tr>
+              <tr>
+                <td>Camera sau</td>
+                <td>Camera góc rộng: 50.0 MP, f/1.8, Thu phóng quang học 2x</td>
+              </tr>
+              <tr>
+                <td>Chipset</td>
+                <td>Snapdragon 8 Gen 3 for Galaxy Tăng lên 42% AI</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>
+            <input type="number" id="sp08" min="0" max="100" size="3" value="0" onkeydown="return false">
+            <button  onclick="addCart('sp08')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+          </span>
         </div>
       </div>
 
-
-<div>
-  <h2>Sản Phẩm Tương Tự</h2>
-        <div class="grid-container">
-          <div class="product-card">
-            <a href="Realme11pro.html">
-              <img
-                src="img/realme/11 Pro Plus.jfif"
-                alt="Sản phẩm 1"
-                class="product-image"
-            /></a>
-            <a href="Realme11pro.html"
-              ><h3 class="product-title">Realme 11 Pro</h3></a
-            >
-            <p class="product-description">
-              12GB/512GB <br />
-              CPU: MediaTek Dimensity 7050 5G 8 nhân
-            </p>
-            <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
-          </div>
-  
-          <div class="product-card">
-            <a href="Realmec61.html">
-              <img src="img/realme/c61.jfif" alt="Sản phẩm 2" class="product-image" />
-              <h3 class="product-title">Realme c61</h3>
-            </a>
-            <p class="product-description">
-              6GB/128GB <br />
-              CPU: Unisoc Tiger T612
-            </p>
-            <p class="product-price">5.190.000đ</p>
-          </div>
-       </div>
-</div>
     </main>
 
     <footer>
@@ -129,9 +98,8 @@
       <div class="grid-container">
         <ul>
           <h2>Tổng đài hỗ trợ miễn phí</h2>
-          <li>Gọi mua hàng 1800.2097</li>
-          <li>Gọi mua hàng 1800.2097</li>
-          <li>Gọi mua hàng 1800.2097</li>
+          <li>Gọi mua hàng ###.####</li>
+
           <h2>Phương thức thanh toán</h2>
           <img src="img/momo.jfif" alt="" class="img" />
           <img src="img/zaLopay.png" alt="" class="img" />
@@ -143,10 +111,6 @@
           <li>Mua hàng trả góp Online</li>
         </ul>
         <ul>
-          <h2>Kết nối với</h2>
-          <li></li>
-          <li></li>
-          <li></li>
           <h2>Website thành viên</h2>
             <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a ><br />
             <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br />

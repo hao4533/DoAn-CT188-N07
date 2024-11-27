@@ -7,7 +7,7 @@ var itemList = {
   sp02: {
     name: "Realme c61",
     price: 5190000,
-    photo: "img/realme/c61.jfif",
+    photo: "img/realme/c61.webp",
   },
   sp03: {},
 
@@ -48,24 +48,16 @@ function addCart(code) {
   if (number == 0) return;
   if (typeof localStorage[code] === "undefined") {
     window.localStorage.setItem(code, number);
-    alert("Đặt hàng thành công. Tổng số lượng đã đặt là: " + number + ".");
+    alert("Đặt hàng thành công.");
   } else {
     current = parseInt(window.localStorage.getItem(code));
     if (number + current > 100) {
       window.localStorage.setItem(code, 100);
-      alert(
-        "Tổng số lượng đặt hàng không thể vượt quá 100. Đặt hàng với số lượng: " +
-          (100 - current) +
-          "."
-      );
+      alert("Tổng số lượng đặt hàng đã vượt quá 100.");
       return;
     } else {
       window.localStorage.setItem(code, number + current);
-      alert(
-        "Đặt hàng thành công. Tổng số lượng đã đặt là: " +
-          (number + current) +
-          "."
-      );
+      alert("Đặt hàng thành công. ");
     }
   }
 }
@@ -163,4 +155,71 @@ function showCart() {
   document.getElementById("bill_total").innerHTML = formatter.format(
     totalPreTax - discount + tax
   );
+}
+function confirmOrder() {
+  if (window.localStorage.length === 0) {
+    alert(
+      "Giỏ hàng của bạn đang trống! Vui lòng chọn sản phẩm trước khi xác nhận."
+    );
+    return;
+  }
+  alert(
+    "Cảm ơn bạn đã đặt hàng tại THN-Phone! Đơn hàng của bạn đã được xác nhận."
+  );
+  window.localStorage.clear();
+  location.reload();
+}
+
+function searchPhones(event) {
+  event.preventDefault(); // Ngăn không cho reload trang
+
+  // Lấy giá trị tìm kiếm
+  const searchInput = document
+    .getElementById("search")
+    .value.trim()
+    .toLowerCase();
+
+  // Danh sách sản phẩm (dùng từ `itemList`)
+  const results = [];
+  for (let code in itemList) {
+    if (
+      itemList[code].name &&
+      itemList[code].name.toLowerCase().includes(searchInput)
+    ) {
+      results.push(itemList[code]);
+    }
+  }
+
+  // Hiển thị kết quả
+  const resultContainer = document.getElementById("search-result");
+  resultContainer.innerHTML = ""; // Xóa nội dung cũ
+
+  if (results.length > 0) {
+    results.forEach((item) => {
+      const resultCard = `
+        <div class="col">
+          <div class="card h-100">
+            <img src="${item.photo}" class="card-img-top" alt="${item.name}" />
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">
+                Giá: ${new Intl.NumberFormat("vi-VN", {
+                  style: "currency",
+                  currency: "VND",
+                }).format(item.price)}
+              </p>
+            </div>
+          </div>
+        </div>
+      `;
+      resultContainer.innerHTML += resultCard;
+    });
+  } else {
+    resultContainer.innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-warning" role="alert">
+          Không tìm thấy sản phẩm nào phù hợp với từ khóa "${searchInput}".
+        </div>
+      </div>`;
+  }
 }

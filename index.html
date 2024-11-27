@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    
     <header>
       <nav>
         <ul class="menu">
@@ -17,7 +19,7 @@
           <li><a href="dangnhap.html">Đăng Nhập</a></li>
         </ul>
       </nav>
-      <form class="search-box" method="GET" id="search-form" action="timkiem.html" onsubmit="return mySearch(event);">
+      <form class="search-box" method="GET" id="search-form" onsubmit="return searchPhones(event);">
         <input name="search" type="search" id="search" placeholder="Nhập nội dung cần tìm..." />
         <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
         &nbsp;
