@@ -285,3 +285,6 @@ textarea {
 .product-info button:hover {
   background-color: #218838;
 }
+.row {
+  margin-bottom: 20px;
+}
