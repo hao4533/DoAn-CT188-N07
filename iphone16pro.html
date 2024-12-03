@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IPhone 16</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
@@ -18,7 +19,9 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">THN Phone</a>
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.jpg" alt="Bootstrap" width="40" height="34">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,11 +31,21 @@
             <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="realme.html">Realme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="SamSung.html">SamSung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="IPHONE.html">IPhone</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="lienhe.html">Liên Hệ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="dangnhap.html">Đăng Nhập</a>
           </li>
+          
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -45,7 +58,13 @@
 </header>
 
     <main>
-      <h1 class="dieuhuong"><a href="index.html">Trang chủ</a> > <a href="realme.html">Realme</a></h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+          <li class="breadcrumb-item"><a href="IPHONE.html">IPhone</a></li>
+          <li class="breadcrumb-item active" aria-current="page">IPhone 16Pro</li>
+        </ol>
+      </nav>      
       <h1>IPhone 16</h1>
       <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
