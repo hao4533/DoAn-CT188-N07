@@ -30,11 +30,7 @@ footer {
 }
 header {
   size: 50px;
-  height: 80px;
-  background-color: beige;
-}
-header img {
-  font-size: 10px;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -287,4 +283,7 @@ textarea {
 }
 .row {
   margin-bottom: 20px;
+}
+.d-flex {
+  margin-right: 0%;
 }

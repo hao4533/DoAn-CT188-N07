@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liên Hệ</title>
-    <link rel="stylesheet" href="css/slide.css" />
+    <title>REALME</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/script.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   </head>
   <body>
-
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -39,28 +42,54 @@
         </div>
       </nav>
   </header>
+
     <main>
-        <h1 style="text-align: center">Liên Hệ</h1>
-        <center>
-          <img src="img/lienhe.png" alt="ảnh liên hệ" width="200" title="liên hệ"/>
-        </center>
-        <div class="contai">
-            <h1>Biểu mẫu Góp ý</h1>
-            <form action="#" method="post">
-              <label for="name">Tên của bạn:</label>
-              <input type="text" id="name"  name="name" required    placeholder="Nhập tên của bạn"/>
+    <h1>REALME</h1>
     
-              <label for="email">Email của bạn:</label>
-              <input type="email"  id="email" name="email" required  placeholder="Nhập email của bạn"/>
-    
-              <label for="feedback">Góp ý của bạn:</label>
-              <textarea id="feedback" name="feedback" required placeholder="Nhập góp ý của bạn"></textarea><br>
-              <button type="submit" onclick="show">Gửi Góp Ý</button>
-            </form>
+      <div class="row">
+        <div class="col"></div>
+      <div class="col">
+        <div class="card" style="width: 14rem;">
+         <a href="Realme11pro.html"> <img src="img/realme/11 Pro Plus.jfif" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+           <a href="Realme11pro.html"><h5 class="card-title">Realme 11Pro</h5></a>
+            <p class="product-price"><s>6.6900,000đ</s> 5.590.000đ</p>
+            <span>
+              <input type="number" id="sp01" min="0" max="100" size="3" value="0" onkeydown="return false">
+              <button  onclick="addCart('sp01')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </span>
           </div>
-          <h1 style="font-size: 20px; text-align: center">
-            Địa chỉ: 123, Đường ABC, TP.Cần Thơ/ Hotline 0123456789
-          </h1>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="RealmeC61.html"><img src="img/realme/c61.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+             <a href="RealmeC61.html"> <h5 class="card-title">Realme c61</h5></a>
+              <p class="product-price">5.190.000đ</p>
+              <span>
+                <input type="number" id="sp02" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp02')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="Realme8.html"><img src="img/realme/8.jfif" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="Realme8.html"><h5 class="card-title">Realme 8</h5></a>
+              <p class="product-price">5.590.000đ</p>
+              <button class="btn btn-primary">Ngừng kinh doanh</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+
+      
+
     </main>
     <footer>
       
@@ -81,13 +110,13 @@
         </ul>
         <ul>
           <h2>Website thành viên</h2>
-            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a ><br />
-            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br />
+            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a><br/>
+            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br/>
             <a class="a" href="https://web.facebook.com/hieunhan.huynh.984">Huỳnh Hiếu Nhân</a>
           </section>
         </ul>
       </div>
       <p>Bản quyền thuộc về THN-Phone</p>
     </footer>
-  </body>
+    </body>
 </html>

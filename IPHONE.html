@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPHONE</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  </head>
+  <body>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">THN Phone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dangnhap.html">Đăng Nhập</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <span onclick="window.location.href='donhang.html'" class="shopping-cart-icon"><i class="fa fa-shopping-cart"></i></span>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>IPHONE</h1>
+
+      <div class="row">
+        <div class="col"></div>
+
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="iphone16.html"><img src="img/IPhone/iphone16.jfif" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="iphone16.html"><h5 class="card-title">Iphone 16</h5></a>
+              <p class="product-price">25.290.000đ</p>
+              <span>
+                <input type="number" id="sp04" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp04')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="iphone16pro.html"><img src="img/IPhone/iphone16pro.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="iphone16pro.html"><h5 class="card-title">Iphone 16Pro</h5></a>
+              <p class="product-price">31.990.000đ</p>
+              <span>
+                <input type="number" id="sp05" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp05')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 14rem;">
+            <a href="Iphone15.html"><img src="img/IPhone/iphone15.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+             <a href="Iphone15.html"> <h5 class="card-title">Iphone 15</h5></a>
+              <a href="Iphone15.html"><p class="product-price">22.890.000đ</p></a>
+              <span>
+                <input type="number" id="sp06" min="0" max="100" size="3" value="0" onkeydown="return false">
+                <button  onclick="addCart('sp06')" class="btn btn-primary">Thêm vào giỏ hàng</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+    </main>
+    <footer>
+      
+      <div class="grid-container">
+        <ul>
+          <h2>Tổng đài hỗ trợ miễn phí</h2>
+          <li>Gọi mua hàng ###.####</li>
+
+          <h2>Phương thức thanh toán</h2>
+          <img src="img/momo.jfif" alt="" class="img" />
+          <img src="img/zaLopay.png" alt="" class="img" />
+          <img src="img/vnpay.png" alt="" class="img" />
+        </ul>
+        <ul>
+          <h2>Thông tin và chính sách</h2>
+          <li>Mua hàng và thanh toán Online</li>
+          <li>Mua hàng trả góp Online</li>
+        </ul>
+        <ul>
+          <h2>Website thành viên</h2>
+            <a class="a" href="https://web.facebook.com/anhhao.huynh.3538/about"> Huỳnh Anh Hào</a><br/>
+            <a class="a" href="https://web.facebook.com/profile.php?id=100028430173524" >Trần Thiên Thanh</a><br/>
+            <a class="a" href="https://web.facebook.com/hieunhan.huynh.984">Huỳnh Hiếu Nhân</a>
+          </section>
+        </ul>
+      </div>
+      <p>Bản quyền thuộc về THN-Phone</p>
+    </footer>
+    </body>
+</html>
